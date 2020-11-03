@@ -3,21 +3,21 @@
 	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"tags": "app:petclinic",
+			"tags": "[Kuberntes]app:petclinic",
 			"upperWarning": 5000,
 			"upperSevere": 10000
 		},
 		{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
 			"aggregation": "avg",
-			"tags": "app:petclinic",
+			"tags": "[Kuberntes]app:petclinic",
 			"upperWarning": 5000,
 			"upperSevere": 8000
 		},
 		{
 			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
 			"aggregation": "avg",
-                        "tags": "app:petclinic",
+                        "tags": "[Kuberntes]app:petclinic",
 			"upperWarning": 50,
 			"upperSevere": 70
 		}
