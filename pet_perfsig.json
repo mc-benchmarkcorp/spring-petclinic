@@ -2,17 +2,17 @@
 	"spec_version": "2.0",
 	"timeseries": [{
 			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregation": "avg",
+			"aggregation": "percentile",
 			"tags": "[Kubernetes]app:petclinic",
-			"upperWarning": 5000,
-			"upperSevere": 10000
+			"upperLimit": 18000000,
+			"lowerLimit": 15000000
 		},
 		{
-			"timeseriesId": "com.dynatrace.builtin:service.responsetime",
-			"aggregation": "avg",
+			"timeseriesId": "com.dynatrace.builtin:service_side_requests",
+			"aggregation": "count",
 			"tags": "[Kubernetes]app:petclinic",
-			"upperWarning": 5000,
-			"upperSevere": 8000
+			"lowerLimit": 250,
+			"upperLimit": 100
 		},
 		{
 			"timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
